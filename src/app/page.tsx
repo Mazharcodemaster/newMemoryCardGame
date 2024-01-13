@@ -1,7 +1,8 @@
-import Card from './card/page'
+// pages/index.tsx
+import React from 'react';
+import Card from './card/page';
 
-const Home = () => {
-  
+const Home: React.FC = () => {
   const initialImages = [
     { src: "/bootstrap.jpg", id: 6 },
     { src: "/c++.png", id: 7 },
@@ -16,12 +17,9 @@ const Home = () => {
   ];
 
   return (
-    <>
-      <div>
-        
-        <Card images={initialImages} />
-      </div>
-    </>
+    <div>
+      <Card images={initialImages} />
+    </div>
   );
 };
 
